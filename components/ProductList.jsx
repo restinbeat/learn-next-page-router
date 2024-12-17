@@ -1,14 +1,14 @@
-import axios from 'axios';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './ProductList.module.css';
 import Link from 'next/link';
+import { fetchProducts } from '@/api';
 
 function ProductList() {
 	const [products, setProducts] = useState();
 
 	useEffect(() => {
-		axios.get('http://localhost:4000/products').then(response => {
+		fetchProducts().then(response => {
 			response.data;
 			setProducts(response.data);
 		});
