@@ -26,7 +26,7 @@ function ProductList() {
 								<div>
 									<Image
 										src={product.imageUrl}
-										width={300}
+										width={250}
 										height={250}
 										alt={product.name}
 									></Image>

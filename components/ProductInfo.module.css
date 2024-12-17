@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+}
+
+.description {
+    margin-left: 10px;
+}
